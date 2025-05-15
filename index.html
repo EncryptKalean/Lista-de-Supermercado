@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de SuperMercado</title>
+
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/responsivo.css">
+  </head>
+  <body style="background-color: rgba(0, 0, 0, 0.849);">
+    <header><h1>Lista de Supermercado</h1></header>
+    <div class="main">
+      <div class="centro">
+        <input id="Nome_do_produto" placeholder="Nome do produto" name="nome_produto" type="text" />
+        <input placeholder="Valor do produto" name="valor_produto" type="number" step="0.01"/>
+        <input type="submit" name="acao" value="Cadastrar" />
+      </div><!--centro-->
+      <ul class="lista">
+        <li>
+          <h3 class="produto_nome">Produto</h3>
+          <h3 class="produto_valor"><span>R$00,00</span></h3>
+        </li>
+      </ul><!--lista-->
+      <h1 class="total">Total: R$ 00</h1>
+      <button id="limpar" name="limpar">Limpar</button>
+    </div><!--main-->
+
+    <script src="src/script.js"></script>
+  </body>
+</html>
