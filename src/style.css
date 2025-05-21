@@ -1,17 +1,19 @@
 :root {
-  --cortema: rgb(102, 0, 128);
+  --cortema: rgb(234, 0, 255);
+  --cortexto: rgb(0, 0, 0);
+  --cortexto-preco: rgb(245, 252, 255);
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: white;
+  color: var(--cortexto);
 }
 
 header {
   background-color: var(--cortema);
-  color: white;
+  color: var(--cortexto);
   text-align: center;
   align-content: center;
   font-size: 13px;
@@ -65,10 +67,12 @@ button {
   padding: 10px;
   border-radius: 20px;
   border: none;
+  color: var(--cortexto-preco);
 }
 
 .produto_valor a{
     background-color: red;
+    color: var(--cortexto-preco);
     border-radius: 20px;
     padding: 5px;
     margin-left: 10px;

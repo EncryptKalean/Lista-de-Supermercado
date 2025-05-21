@@ -2,7 +2,7 @@ const produtoNome = document.querySelector('input[name=nome_produto]'),
       produtoPreco = document.querySelector('input[name=valor_produto]'),
       lista = document.querySelector('.lista');
 
-let itens = JSON.parse(localStorage.getItem('lista')) || '[]',
+let itens = JSON.parse(localStorage.getItem('lista')) ?? [],
     soma = 0;
 
 document.querySelector('input[name=acao]').addEventListener('click',()=>{
